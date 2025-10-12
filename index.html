@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Drippin4ever</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drippin4ever - Urban Streetwear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Developer: Built with style, coded with passion -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">DRIPPIN4EVER</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#catalogue">Catalogue</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="DRIPPIN4EVER">DRIPPIN4EVER</h1>
+            <p class="tagline">Where Street Culture Meets High Fashion</p>
+            <a href="#catalogue" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=800" alt="streetwear-hero.jpg" loading="lazy">
+        </div>
+    </section>
+
+    <section id="catalogue" class="catalogue-section">
+        <h2>Latest Drops</h2>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+            <button class="filter-btn" data-filter="tees">Tees</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+        </div>
+        <div class="products-grid">
+            <div class="product-card" data-category="hoodies" data-id="1" data-price="89.99">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400" alt="urban-hoodie-black.jpg">
+                <h3>Urban Shadow Hoodie</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="tees" data-id="2" data-price="45.99">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="graphic-tee-white.jpg">
+                <h3>Drip Logo Tee</h3>
+                <p class="price">$45.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="hoodies" data-id="3" data-price="95.99">
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400" alt="oversized-hoodie-cream.jpg">
+                <h3>Oversized Drip Hoodie</h3>
+                <p class="price">$95.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="tees" data-id="4" data-price="42.99">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" alt="vintage-tee-black.jpg">
+                <h3>Vintage Wave Tee</h3>
+                <p class="price">$42.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="accessories" data-id="5" data-price="29.99">
+                <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400" alt="snapback-cap-black.jpg">
+                <h3>Drip Snapback</h3>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="accessories" data-id="6" data-price="24.99">
+                <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=400" alt="beanie-grey.jpg">
+                <h3>Urban Beanie</h3>
+                <p class="price">$24.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <h2>Complete Your Order</h2>
+        <div class="order-container">
+            <div class="cart-summary">
+                <h3>Your Cart</h3>
+                <div class="cart-items"></div>
+                <div class="cart-total">
+                    <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                    <p>Shipping: <span id="shipping">$0.00</span></p>
+                    <p class="total">Total: <span id="total">$0.00</span></p>
+                </div>
+            </div>
+            <form class="checkout-form" id="checkoutForm">
+                <h3>Shipping Information</h3>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address" placeholder="Street Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="zipcode" placeholder="ZIP Code" required>
+                </div>
+                <button type="submit" class="checkout-btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Drippin4ever</h2>
+        <p>Born from the streets, refined for the culture. We're not just selling clothes - we're building a movement.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">TikTok</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Drippin4ever. All rights reserved.</p>
+        <!-- Easter Egg: The drip never stops -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
