@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Drippin4ever</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">DRIPPIN4EVER</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="cart-icon" onclick="window.location.href='order.html'">
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="order" class="order-section">
+        <h2>Complete Your Order</h2>
+        <div class="order-container">
+            <div class="cart-summary">
+                <h3>Your Cart</h3>
+                <div class="cart-items"></div>
+                <div class="cart-total">
+                    <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                    <p>Shipping: <span id="shipping">$0.00</span></p>
+                    <p class="total">Total: <span id="total">$0.00</span></p>
+                </div>
+            </div>
+            <form class="checkout-form" id="checkoutForm">
+                <h3>Shipping Information</h3>
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address" placeholder="Street Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="zipcode" placeholder="ZIP Code" required>
+                </div>
+                <button type="submit" class="checkout-btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Drippin4ever. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
